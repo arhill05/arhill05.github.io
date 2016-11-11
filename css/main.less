@@ -120,11 +120,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: @light-grey;
     a,
-    .material-icons {
+    i {
         color: @light-orange;
-        transition: color .3s ease;
+        transition: all 0.3s linear;
         &:hover {
-            cursor: pointer;
             color: @dark-orange;
         }
     }
@@ -144,6 +143,15 @@ body {
     .icons {
         float: left;
         font-size: 24px;
+        a,
+        &.fa {
+            color: @light-orange;
+            transition: color .3s ease;
+            &:hover {
+                cursor: pointer;
+                color: @dark-orange;
+            }
+        }
         i {
             margin: 0 @single-space;
             color: @light-orange;
@@ -186,16 +194,13 @@ body {
         font-size: 24px;
         .highlight {
             color: @white;
-            font-weight: 400;
         }
     }
 }
 
 #content {
-    padding: @triple-space @single-space * 6;
     padding-top: 0;
     .parallax-container {
-        margin: 0 -48px;
         height: 700px;
         img {
             filter: brightness(50%);
@@ -207,6 +212,8 @@ body {
 }
 
 #portfolio {
+    padding: 0 15%;
+    transition: all 0.3s linear;
     .row {
         width: 90%
     }
@@ -238,6 +245,29 @@ body {
                 }
             }
         }
+    }
+}
+
+#footer {
+    padding: @single-space @double-space;
+    height: @single-space * 6;
+    background-color: @dark-orange;
+    color: @white;
+    vertical-align: middle;
+    .footer-right-text {
+        float: right;
+        font-size: 24px;
+        i {
+            color: @light-orange;
+            padding: 0 @single-space;
+            transition: all 0.3s linear;
+            &:hover {
+                color: @white;
+            }
+        }
+    }
+    .footer-left-text {
+        float: left;
     }
 }
 
@@ -361,6 +391,44 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (max-width: 529px) {
+    .parallax-container {
+        width: 100%;
+        margin: 0;
+    }
+    #content {
+        padding: 0;
+    }
+    #header {
+        padding: 8px 0;
+        height: 40px;
+        .nav {
+            font-size: 16px;
+            text-align: center;
+            float: none;
+            vertical-align: middle;
+        }
+        .icons {
+            display: none;
+            visibility: hidden;
+        }
+    }
+    #portfolio {
+        .card {
+            .card-content {
+                height: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    #portfolio {
+        padding: 0;
+        transition: all 0.3s linear;
+    }
+}
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
