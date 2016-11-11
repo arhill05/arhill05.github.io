@@ -150,8 +150,11 @@ body i:hover {
 }
 #main h1 {
   font-weight: 600;
-  margin-top: -4px;
+  margin-top: 16px;
   color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 80px;
 }
 #main span {
   font-size: 24px;
