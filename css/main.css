@@ -174,6 +174,9 @@ body i:hover {
 #content .parallax-container img {
   filter: brightness(50%);
 }
+#content .parallax-container.parallax-2 {
+  height: 300px;
+}
 #content .divider {
   margin: 64px 0;
 }
@@ -201,13 +204,23 @@ body i:hover {
 }
 #portfolio .card .card-content {
   margin-top: 16px;
-  height: 164px;
+  min-height: 164px;
 }
 #portfolio .card .card-action > a {
   color: #e6b883 !important;
 }
 #portfolio .card .card-action > a:hover {
   color: #d9831e !important;
+}
+#contact h3 {
+  text-align: center;
+}
+#contact .contact-icons {
+  text-align: center;
+}
+#contact i {
+  margin: 0 16px;
+  font-size: 48px;
 }
 #footer {
   padding: 8px 16px;
@@ -330,10 +343,19 @@ body i:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (max-width: 399px) {
+  #main {
+    margin-top: 128px;
+  }
+  .parallax-container {
+    height: 300px;
+  }
+}
 @media only screen and (max-width: 529px) {
   .parallax-container {
     width: 100%;
     margin: 0;
+    height: 400px;
   }
   #content {
     padding: 0;

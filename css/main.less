@@ -208,6 +208,9 @@ body {
         img {
             filter: brightness(50%);
         }
+        &.parallax-2 {
+            height: 300px;
+        }
     }
     .divider {
         margin: @single-space * 8 0;
@@ -238,7 +241,7 @@ body {
         }
         .card-content {
             margin-top: @double-space;
-            height: 164px;
+            min-height: 164px;
         }
         .card-action {
             &>a {
@@ -248,6 +251,21 @@ body {
                 }
             }
         }
+    }
+}
+
+#contact {
+    h3 {
+        text-align: center;
+    }
+
+.contact-icons {
+    text-align: center;
+}
+
+    i {
+        margin: 0 16px;
+        font-size: 48px;
     }
 }
 
@@ -395,10 +413,20 @@ body {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (max-width: 399px) {
+    #main {
+        margin-top: 128px;
+    }
+    .parallax-container {
+        height: 300px;
+    }
+}
+
 @media only screen and (max-width: 529px) {
     .parallax-container {
         width: 100%;
         margin: 0;
+        height: 400px;
     }
     #content {
         padding: 0;
