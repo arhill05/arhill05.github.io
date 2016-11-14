@@ -25,10 +25,17 @@ $(window).scroll(function () {
 
 $(document).ready(function () {
 
-       $(window).on('load',function(){
+    $(window).on('load', function () {
         $('#preloader').fadeOut(1000, 'linear', function () { $(this).remove(); });
         $('#header').fadeIn('hidden', 10000000, 'linear');
-       });
+    });
     $('.parallax').parallax();
 });
+
+
+showError = function () {
+    toastr.info('Woops! I\'m still completing this class. Check again later and this link will work!');
+}
+
+
 

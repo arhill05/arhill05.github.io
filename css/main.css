@@ -202,6 +202,9 @@ body i:hover {
   height: 100%;
   width: 100%;
 }
+#portfolio .card .card-image img {
+  min-height: 28em;
+}
 #portfolio .card .card-content {
   margin-top: 16px;
   min-height: 164px;
