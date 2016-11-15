@@ -26,7 +26,7 @@ $(window).scroll(function () {
 $(document).ready(function () {
 
     $(window).on('load', function () {
-        $('#preloader').fadeOut(1000, 'linear', function () { $(this).remove(); });
+        $('#preloader').fadeOut(300, 'linear', function () { $(this).remove(); });
         $('#header').fadeIn('hidden', 10000000, 'linear');
     });
     $('.parallax').parallax();
