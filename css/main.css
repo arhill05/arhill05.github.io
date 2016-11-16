@@ -154,7 +154,6 @@ body i:hover {
   background-color: #fcfcfc;
 }
 #main {
-  transition: all 0.5s ease;
   color: #d9831e;
   margin-top: 256px;
 }
@@ -169,17 +168,26 @@ body i:hover {
 #main span {
   font-size: 24px;
 }
+#main .parallax-container {
+  background-color: #616464;
+}
 #main .sub-text {
   font-size: 24px;
 }
 #main .sub-text .highlight {
   color: #fff;
 }
+#main .down-arrow {
+  margin-top: 25%;
+  color: #d9831e;
+  font-size: 36px;
+}
 #content {
   padding-top: 0;
 }
 #content .parallax-container {
   height: 700px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 #content .parallax-container img {
   filter: brightness(50%);
@@ -238,6 +246,7 @@ body i:hover {
   background-color: #d9831e;
   color: #fff;
   vertical-align: middle;
+  transition: all 0.3s linear;
 }
 #footer .footer-right-text {
   float: right;
@@ -357,20 +366,16 @@ body i:hover {
   #main {
     margin-top: 128px;
   }
-  .parallax-container {
-    height: 300px;
-  }
 }
 @media only screen and (max-width: 529px) {
-  .parallax-container {
-    width: 100%;
-    margin: 0;
-    height: 400px;
-  }
   #content {
     padding: 0;
   }
+  .parallax-container {
+    background-color: #616464;
+  }
   #header {
+    margin-top: -64px;
     padding: 8px 0;
     height: 40px;
   }

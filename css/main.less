@@ -115,11 +115,10 @@ textarea {
     background-color: white;
     text-align: center;
     vertical-align: middle;
-
     .preloader-wrapper {
         position: fixed;
         top: 50%;
-         .spinner-layer {
+        .spinner-layer {
             border-color: @dark-orange;
         }
     }
@@ -190,7 +189,6 @@ body {
 }
 
 #main {
-    transition: all 0.5s ease;
     color: @dark-orange;
     margin-top: 256px;
     h1 {
@@ -204,11 +202,19 @@ body {
     span {
         font-size: 24px;
     }
+    .parallax-container {
+        background-color: @dark-grey;
+    }
     .sub-text {
         font-size: 24px;
         .highlight {
             color: @white;
         }
+    }
+    .down-arrow {
+        margin-top: 25%;
+        color: @dark-orange;
+        font-size: 36px;
     }
 }
 
@@ -216,6 +222,7 @@ body {
     padding-top: 0;
     .parallax-container {
         height: 700px;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
         img {
             filter: brightness(50%);
         }
@@ -249,9 +256,6 @@ body {
         .card-image {
             height: 100%;
             width: 100%;
-
-            img {
-            }
         }
         .card-content {
             margin-top: @double-space;
@@ -272,11 +276,9 @@ body {
     h3 {
         text-align: center;
     }
-
-.contact-icons {
-    text-align: center;
-}
-
+    .contact-icons {
+        text-align: center;
+    }
     i {
         margin: 0 16px;
         font-size: 48px;
@@ -289,6 +291,7 @@ body {
     background-color: @dark-orange;
     color: @white;
     vertical-align: middle;
+    transition: all 0.3s linear;
     .footer-right-text {
         float: right;
         font-size: 24px;
@@ -431,21 +434,17 @@ body {
     #main {
         margin-top: 128px;
     }
-    .parallax-container {
-        height: 300px;
-    }
 }
 
 @media only screen and (max-width: 529px) {
-    .parallax-container {
-        width: 100%;
-        margin: 0;
-        height: 400px;
-    }
     #content {
         padding: 0;
     }
+    .parallax-container {
+        background-color: @dark-grey;
+    }
     #header {
+        margin-top: -64px;
         padding: 8px 0;
         height: 40px;
         .nav {
