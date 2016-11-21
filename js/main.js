@@ -30,9 +30,9 @@ $(document).ready(function () {
         $('#header').fadeIn('hidden', 10000000, 'linear');
     });
 
-    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        $('.parallax').parallax();
-    }
+    // if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    //     $('.parallax').parallax();
+    // }
 
     showError = function () {
         toastr.info('Woops! I\'m still completing this class. Check again later and this link will work!');

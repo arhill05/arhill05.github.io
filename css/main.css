@@ -154,8 +154,13 @@ body i:hover {
   background-color: #fcfcfc;
 }
 #main {
+  height: 600px;
+  vertical-align: middle;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/desk.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #d9831e;
-  margin-top: 256px;
 }
 #main h1 {
   font-weight: 600;
@@ -170,6 +175,10 @@ body i:hover {
 }
 #main .parallax-container {
   background-color: #616464;
+}
+#main .main-text {
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
 #main .sub-text {
   font-size: 24px;
@@ -203,7 +212,21 @@ body i:hover {
   transition: all 0.3s linear;
 }
 #portfolio .row {
-  width: 90%;
+  width: 100%;
+  padding: 24px 16px;
+  vertical-align: middle;
+}
+#portfolio .project-image,
+#portfolio .project-description {
+  display: inline-block;
+}
+#portfolio .project-image button,
+#portfolio .project-description button {
+  color: #e6b883;
+}
+#portfolio .project-image .actions,
+#portfolio .project-description .actions {
+  text-align: center;
 }
 #portfolio .display-options .material-icons {
   font-size: 36px;
@@ -362,20 +385,21 @@ body i:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (max-width: 399px) {
-  #main {
-    margin-top: 128px;
-  }
-}
 @media only screen and (max-width: 529px) {
   #content {
     padding: 0;
+  }
+  #portfolio .container .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .down-arrow {
+    display: block;
   }
   .parallax-container {
     background-color: #616464;
   }
   #header {
-    margin-top: -64px;
     padding: 8px 0;
     height: 40px;
   }
@@ -394,6 +418,9 @@ body i:hover {
   #portfolio {
     padding: 0;
     transition: all 0.3s linear;
+  }
+  .down-arrow {
+    display: none !important;
   }
 }
 @media only screen and (min-width: 35em) {

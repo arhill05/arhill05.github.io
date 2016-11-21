@@ -189,8 +189,13 @@ body {
 }
 
 #main {
+    height: 600px;
+    vertical-align: middle;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/desk.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: @dark-orange;
-    margin-top: 256px;
     h1 {
         font-weight: 600;
         margin-top: @double-space;
@@ -204,6 +209,10 @@ body {
     }
     .parallax-container {
         background-color: @dark-grey;
+    }
+    .main-text {
+        padding-top: 128px;
+        padding-bottom: 128px;
     }
     .sub-text {
         font-size: 24px;
@@ -239,7 +248,19 @@ body {
     padding: 0 15%;
     transition: all 0.3s linear;
     .row {
-        width: 90%
+        width: 100%;
+        padding: 24px 16px;
+        vertical-align: middle;
+    }
+    .project-image,
+    .project-description {
+        display: inline-block;
+        button {
+            color: @light-orange;
+        }
+        .actions {
+            text-align: center;
+        }
     }
     .display-options {
         .material-icons {
@@ -430,21 +451,25 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 399px) {
-    #main {
-        margin-top: 128px;
-    }
-}
+@media only screen and (max-width: 399px) {}
 
 @media only screen and (max-width: 529px) {
     #content {
         padding: 0;
     }
+    #portfolio {
+        .container .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+    .down-arrow {
+        display: block;
+    }
     .parallax-container {
         background-color: @dark-grey;
     }
     #header {
-        margin-top: -64px;
         padding: 8px 0;
         height: 40px;
         .nav {
@@ -464,6 +489,9 @@ body {
     #portfolio {
         padding: 0;
         transition: all 0.3s linear;
+    }
+    .down-arrow {
+        .hidden
     }
 }
 
