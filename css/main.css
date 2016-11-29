@@ -276,6 +276,15 @@ body i:hover {
 #about p {
   margin: 16px 0;
 }
+#about .resume-and-cover {
+  width: 100%;
+  font-size: 24px;
+  margin-top: 64px;
+  text-align: center;
+}
+#about .resume-and-cover span {
+  margin: 0px 24px;
+}
 #about #technical-skills {
   margin-top: 32px;
   /*.progress {
