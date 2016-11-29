@@ -1,6 +1,6 @@
 <!doctype html>
-<html class="js" lang="">
-<div id="preloader">
+<html class="no-js" lang="">
+<!--<div id="preloader">
   <div class="preloader-wrapper big active">
     <div class="spinner-layer">
       <div class="circle-clipper left">
@@ -14,12 +14,12 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Portfolio</title>
+  <title>Andrew Hill | Web Developer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
@@ -32,7 +32,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -58,7 +58,8 @@
           <h1>ANDREW HILL</h1>
           <div class="row center-align">
             <div class="col s12 m12">
-              <span class="sub-text">A <span class="highlight">web developer</span> from <span class="highlight">Louisville, KY</span></span>
+              <div class="sub-text">A <span class="highlight">web developer</span> from <span class="highlight">Louisville, KY</span></div>
+              <i class="material-icons down-arrow">arrow_downward</i>
             </div>
           </div>
 
@@ -76,91 +77,64 @@
             </p>
             <p>I'm a driven and motivated web developer whose strengths lie in the front-end with frameworks such as AngularJS.
               I'm actively doing everything I can to improve my skills with backend programming and have experience using
-              technologies such as .NET WebAPI and NodeJS. With my abnormally fast learning skills, I'll be keeping up with
-              the best of them in no time.
+              technologies such as .NET WebAPI and NodeJS.
             </p>
-            <div id="technical-skills">
+            <!--<div id="technical-skills">
               <h4>Technical Skills</h4>
               <div class="row">
                 <div class="col s12 m4">
                   JavaScript
-                  <span class="right-float skill-label">7/10</span>
-                  <div class="progress">
-                    <div class="determinate" style="width: 70%"></div>
-                  </div>
                 </div>
                 <div class="col s12 m4">
                   AngularJS 1.X
-                  <span class="right-float skill-label">8/10</span>
-                  <div class="progress">
-                    <div class="determinate" style="width: 80%"></div>
-                  </div>
-                </div>
                 <div class="col s12 m4">
                   HTML
-                  <span class="right-float skill-label">8/10</span>
-                  <div class="progress">
-                    <div class="determinate" style="width: 80%"></div>
-                  </div>
                 </div>
 
               </div>
               <div class="row">
                 <div class="col s12 m4">
                   CSS
-                  <span class="right-float skill-label">6/10</span>
-                  <div class="progress">
-                    <div class="determinate" style="width: 60%"></div>
-                  </div>
                 </div>
                 <div class="col s12 m4">
                   C#
-                  <span class="right-float skill-label">5/10</span>
-                  <div class="progress">
-                    <div class="determinate" style="width: 50%"></div>
-                  </div>
                 </div>
                 <div class="col s12 m4">
                   SQL
-                  <span class="right-float skill-label">4/10</span>
-                  <div class="progress">
-                    <div class="determinate" style="width: 40%"></div>
-                  </div>
-
                 </div>
+              </div>
+            </div>
+          </div>-->
+          </div>
 
+        </div>
+      </div>
+      <div class="container">
+        <hr class="divider">
+      </div>
+      <div id="portfolio">
+        <div class="container">
+          <h2>My Work</h2>
+        </div>
+        <div class="row">
+          <div class="col s12 l4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="img/csharp.png">
+                <span class="card-title">C#</span>
+              </div>
+              <div class="card-content">
+                <p>This includes many different examples of Windows Forms applications demonstrating many different concepts
+                  of object-oriented programming. Most were done in introduction to programming courses.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="https://drive.google.com/open?id=0B3Tcua9stqmneUE4NVIzZFFoYzA">Show me</a>
               </div>
             </div>
           </div>
-        </div>
-        <hr class="divider">
-      </div>
-    </div>
-
-    <div id="portfolio">
-      <div class="container">
-        <h2>Portfolio</h2>
-      </div>
-      <div class="row">
-        <div class="col s12 l4">
-          <a href="https://drive.google.com/open?id=0B3Tcua9stqmneUE4NVIzZFFoYzA">
-          <div class="card hoverable">
-            <div class="card-image">
-              <img src="img/csharp.png">
-              <span class="card-title">C#</span>
-            </div>
-            <div class="card-content">
-              <p>This includes many different examples of Windows Forms applications demonstrating many different concepts of
-                object-oriented programming. Most were done in introduction to programming courses.
-              </p>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class="col s12 l4">
-          <a href="https://github.com/arhill05/flatlanders-store">
+          <div class="col s12 l4">
             <div class="card hoverable">
-
               <div class="card-image">
                 <img src="img/angular.svg">
                 <span class="card-title">AngularJS</span>
@@ -168,11 +142,12 @@
               <div class="card-content">
                 <p>This is my completed tutorial of the Flatlander's Store project provided by codeschool.com using AngularJS.</p>
               </div>
+              <div class="card-action">
+                <a href="https://github.com/arhill05/flatlanders-store">Show me</a>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col s12 l4">
-          <a onclick="showError()">
+          </div>
+          <div class="col s12 l4">
             <div class="card hoverable">
               <div class="card-image">
                 <img src="img/android.jpg">
@@ -183,18 +158,19 @@
                   more principles of object-oriented languages in Java.
                 </p>
               </div>
+              <div class="card-action">
+                <a onclick="showError()">Show me</a>
+              </div>
             </div>
           </a>
         </div>
-      </div>
-      <!-- end first row -->
 
-      <!-- second row -->
-      <div class="row">
-        <div class="col s12 l4">
-          <a href="https://drive.google.com/open?id=0B3Tcua9stqmnejJiWXhjVElrVlk">
+        <!-- end first row -->
+
+        <!-- second row -->
+        <div class="row">
+          <div class="col s12 l4">
             <div class="card hoverable">
-
               <div class="card-image">
                 <img src="img/sql.png">
                 <span class="card-title">SQL</span>
@@ -204,11 +180,12 @@
                   This includes many different assignments done during my studies of SQL and relational database structures.
                 </p>
               </div>
+              <div class="card-action">
+                <a href="https://drive.google.com/open?id=0B3Tcua9stqmnejJiWXhjVElrVlk">Show me</a>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col s12 l4">
-          <a href="http://www.socratesapp.co">
+          </div>
+          <div class="col s12 l4">
             <div class="card hoverable">
               <div class="card-image">
                 <img src="img/socrates.jpg">
@@ -219,11 +196,12 @@
                   (cloud hosted realtime database), AngularJS 1.x, HTML and CSS.
                 </p>
               </div>
+              <div class="card-action">
+                <a href="http://www.socratesapp.co">Show me</a>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col s12 l4">
-          <a href="https://drive.google.com/open?id=0B3Tcua9stqmnMThDemNLUWc4cnc">
+          </div>
+          <div class="col s12 l4">
             <div class="card hoverable">
               <div class="card-image">
                 <img src="img/wordpress.png">
@@ -234,34 +212,29 @@
                   designed this site from the ground up with extensive documentation, prototypes to the final implementation.
                 </p>
               </div>
+
+              <div class="card-action">
+                <a href="https://drive.google.com/open?id=0B3Tcua9stqmnMThDemNLUWc4cnc">Show me</a>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="parallax-container parallax-2 valign-wrapper">
-      <div class="parallax"><img src="img/desk.jpg"></div>
-      <div class="container valign">
+    <footer id="footer">
+      <div class="footer-left-text">
+        &copy Andrew Hill 2016
       </div>
-    </div>
-
-  </div>
-  <footer id="footer">
-    <div class="footer-left-text">
-      &copy Andrew Hill 2016
-    </div>
-    <div class="footer-right-text">
-      <a href="https://github.com/arhill05"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/andrew-hill-7b328b81"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-      <a href="mailto:mdude2314@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    </div>
-  </footer>
+      <div class="footer-right-text">
+        <a href="https://github.com/arhill05"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/andrew-hill-7b328b81"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="mailto:mdude2314@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+    </footer>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="js/vendor/jquery-3.1.1.min.js"></script>
+<script src="js/vendor/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
 
@@ -269,7 +242,7 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--Google Analytics: change UA-XXXXX-X to be your site's ID. 
 <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -277,6 +250,6 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        </script>-->
 
 </html>
