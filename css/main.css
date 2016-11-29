@@ -86,6 +86,7 @@ textarea {
 .js div#preloader .preloader-wrapper {
   position: fixed;
   top: 50%;
+  left: 50%;
 }
 .js div#preloader .preloader-wrapper .spinner-layer {
   border-color: #d9831e;
@@ -193,6 +194,9 @@ body i:hover {
 #portfolio {
   padding: 0 15%;
   transition: all 0.3s linear;
+}
+#portfolio a {
+  color: #949494;
 }
 #portfolio .row {
   width: 90%;
